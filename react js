@@ -1,0 +1,47 @@
+import React from 'react';
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+      <Header />
+      <div className="container">
+        <Sidebar />
+        <Main />
+      </div>
+    </div>
+  );
+}
+
+function Header() {
+  return (
+    <header className="header">
+      <h1>My Dashboard</h1>
+    </header>
+  );
+}
+
+function Sidebar() {
+  return (
+    <aside className="sidebar">
+      <nav>
+        <ul>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Analytics</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>
+      </nav>
+    </aside>
+  );
+}
+
+function Main() {
+  return (
+    <main className="main">
+      <h2>Dashboard</h2>
+      <p>Welcome to your dashboard!</p>
+    </main>
+  );
+}
+
+export default App;
